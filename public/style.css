@@ -82,5 +82,10 @@ footer {
   font-weight: 300;
   font-size: 20px;
   font-style:italic;
-  cursor: pointer;
+}
+
+#copied {
+  color: green;
+  display: none;
+  text-align: center
 }

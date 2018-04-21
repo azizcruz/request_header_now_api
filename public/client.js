@@ -3,10 +3,13 @@
 
 (function(){
  
-  $("#link").on("click", () => {
-  
+  $("input").on("click", function() {
     $(this).select()
-  
+    document.execCommand("copy");
+    $("#copied").fadeIn(400);
+    setTimeout(function() {$("#copied").fadeOut(400);}, 400)
   })
+  
+  
   
 })()
