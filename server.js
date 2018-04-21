@@ -22,8 +22,6 @@ app.get("/", (req, res) => {
 })
 
 
-
-
 // Get data about the client.
 app.get("/client/data", function (request, response) {
   var iface = os.networkInterfaces();
@@ -36,7 +34,7 @@ app.get("/client/data", function (request, response) {
     "system": sys
   }
   
-  console.log(data);
+ 
   response.send(data)
 });
 
