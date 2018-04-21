@@ -3,9 +3,9 @@
 
 (function(){
  
-  $(".link-holder").on("click", () => {
+  $("#link").on("click", () => {
   
-    $(this).text().select()
+    $(this).select()
   
   })
   
