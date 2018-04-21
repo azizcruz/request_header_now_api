@@ -17,17 +17,27 @@ app.use(bodyParser.json())
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/views/index.html")
+})
 
 
 
-// http://expressjs.com/en/starter/basic-routing.html
+
+// Get data about the client.
 app.get("/client/data", function (request, response) {
   var iface = os.networkInterfaces();
   var ip = iface.eth0[0].address;
   var lang = request.headers["accept-language"].split(",")[0];
+  var sys = os.platform() + " " + os.arch();
+  var data = {
+    "ipaddress": ip,
+    "language": lang,
+    "system": sys
+  }
   
-  console.log(process.platform)
-  response.end();
+  console.log(data);
+  response.send(data)
 });
 
 // listen for requests :)
