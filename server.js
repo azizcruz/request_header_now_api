@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 
 // http://expressjs.com/en/starter/basic-routing.html
-app.get("/client", function (request, response) {
+app.get("/client/data", function (request, response) {
    
 });
 
