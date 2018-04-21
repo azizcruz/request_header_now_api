@@ -78,7 +78,3 @@ footer {
 .mybtn {
    margin-top: 30px; 
 }
-
-.mybtn:focus {
-   border: 1px solid #000 !important;
-}

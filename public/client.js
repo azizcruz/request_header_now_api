@@ -3,9 +3,14 @@
 
 (function(){
  
-  $(".mybtn").on("click", () => {
-    $(this).css("background-color", "#000")
-  })
+  $('.mybtn').on('click', function(e){
   
+    $.get("/client/data", (data) => {
+    
+      console.log(data)
+    
+    })
+    
+  });
   
 })()
