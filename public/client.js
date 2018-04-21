@@ -3,14 +3,10 @@
 
 (function(){
  
-  $('.mybtn').on('click', function(e){
+  $(".link-holder").on("click", () => {
   
-    $.get("/client/data", (data) => {
-    
-      console.log(data)
-    
-    })
-    
-  });
+    $(this).text().select()
+  
+  })
   
 })()

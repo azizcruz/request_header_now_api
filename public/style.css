@@ -75,6 +75,12 @@ footer {
   width: 40%;
 }
 
-.mybtn {
-   margin-top: 30px; 
+.link-holder {
+  border: 1px solid #EAEAEA;
+  padding: 15px;
+  background-color: #EEE;
+  font-weight: 300;
+  font-size: 20px;
+  font-style:italic;
+  cursor: pointer;
 }
