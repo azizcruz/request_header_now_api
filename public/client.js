@@ -3,6 +3,9 @@
 
 (function(){
  
- 
+  $(".mybtn").on("click", () => {
+    $(this).css("background-color", "#000")
+  })
+  
   
 })()
