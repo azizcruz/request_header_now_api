@@ -69,3 +69,16 @@ footer {
   padding-top: 25px;
   border-top: 1px solid lightgrey;
 }
+
+.center {
+  margin: auto;
+  width: 40%;
+}
+
+.mybtn {
+   margin-top: 30px; 
+}
+
+.mybtn:{
+   border: 1px solid #000 !important;
+}
